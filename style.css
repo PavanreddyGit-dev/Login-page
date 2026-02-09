@@ -1,0 +1,12 @@
+#registration-form {
+    position: absolute;
+    bottom: 20%; /* Adjust based on where the bag is in your video */
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transform-origin: bottom center; /* This makes it grow "up" from the bag */
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#registration-form.active {
+    transform: translateX(-50%) scale(1);
+}
